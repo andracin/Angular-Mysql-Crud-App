@@ -18,7 +18,7 @@ passport.use('local.signin', new LocalStrategy({
              done(null, false, req.flash('message','Password Incorrecto'));
          }
     }else {
-        return done(null, false, req.flash('message', 'EL usuario no existe'));
+        return done(null, false, req.flash('message','EL usuario no existe'));
     }
 }));
 
