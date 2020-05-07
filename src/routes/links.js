@@ -24,6 +24,7 @@ router.post('/add', isLoggedIn , async (req , res) => {
     res.redirect('/links');
 });
 
+// Se cambio la consulta para que solo el usuario logeado pudiera ver las targetas correspondientes
 router.get('/',  async ( req, res) => {
     const user_id = req.user.id;
     //console.log(user_id);
