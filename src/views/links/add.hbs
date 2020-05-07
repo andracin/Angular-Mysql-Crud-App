@@ -4,6 +4,11 @@
             <div class="card ">
                 <div class="card-body">
                     <form action="/links/add" method = "POST">
+                    
+                    <div class="form-group">
+                        
+                           <input  type="text" value="{{user.id}}" class="form-control" name="user_id"  placeholder="{{user.id}}">
+                         </div>
                          <div class="form-group">
                              <input type="text" class="form-control" name="title"  placeholder="Title" autofocus>
                          </div>
@@ -15,7 +20,8 @@
                          </div>
                          <div class="from-group">
                              <button class="btn btn-success btn-block">
-                                  Save
+                        
+                                  Guardar
                              </button>
                          </div>
                     </form>

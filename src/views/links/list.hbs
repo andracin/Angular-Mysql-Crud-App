@@ -10,17 +10,19 @@
                             </h3>
                         </a>
                         <p class="m-2">{{descrition}}</p>
+                        <p>ID {{user_id}}</p>
                         <p>{{timeago created_at}}</p>
                         <a href="/links/delete/{{id}}" class="btn btn-danger">Delete Link</a>
                         <a href="/links/edit/{{id}}" class="btn btn-secondary">Edit</a>
                     </div>
                 </div>
             </div>
+            
         {{else}}
             <div class="col-md-4 mx-auto">
                 <div class="card card-body text-center">
-                    <p>No Existe niguna Targeta Creada</p>
-                    <a href="/links/add">Crea una Targeta!</a>
+                    <p>No Existe niguna Tarjeta Creada</p>
+                    <a href="/links/add">Crea una Tarjeta!</a>
                 </div>
             </div>
     </div>
